@@ -18,6 +18,7 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
+            <th>Gender</th>
             <th>Age</th>
             <th>Grade</th>
             <th>Actions</th>
@@ -27,6 +28,7 @@
         <tr th:each="student : ${students}">
             <td th:text="${student.id}"></td>
             <td th:text="${student.name}"></td>
+            <td th:text="${student.gender}"></td>
             <td th:text="${student.age}"></td>
             <td th:text="${student.grade}"></td>
             <td>
